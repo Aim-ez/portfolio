@@ -1,15 +1,22 @@
-export default function NavBar() {
-    return (
-      <nav className="bg-gray-800 text-white p-4">
-        <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-xl font-bold">My Portfolio</h1>
-          <ul className="flex space-x-4">
-            <li><a href="#about" className="hover:text-blue-400">About</a></li>
-            <li><a href="#projects" className="hover:text-blue-400">Projects</a></li>
-            <li><a href="#contact" className="hover:text-blue-400">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    );
-  }
+import React from 'react'
+import logo from '../assets/logo-no-back.png'
+import {FaLinkedin, FaGithub, FaInstagram} from 'react-icons/fa'
+
+const NavBar = () => {
+  return (
+    <nav className='mb-20 flex items-center justify-between py-6'>
+      <div>
+        <img className="mx-1 w-20" src={logo} alt="logo" />
+      </div>
+      <div className='m-8 flex items-center justify-center gap-4 text-2xl'> 
+        <FaLinkedin className='text-white text-2xl mx-2' />
+        <FaGithub className='text-white text-2xl mx-2' />
+        <FaInstagram className='text-white text-2xl mx-2' />
+      </div>
+    </nav>
+
+  )
+}
+
+export default NavBar
   
