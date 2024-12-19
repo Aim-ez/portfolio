@@ -3,6 +3,8 @@ import NavBar from './components/NavBar'
 import Hero from './components/Hero'
 import AboutMe from './components/AboutMe'
 
+//https://www.youtube.com/watch?v=_63mEm3AMSY
+
 const App = () => {
   return (
     <div className='overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900'>
