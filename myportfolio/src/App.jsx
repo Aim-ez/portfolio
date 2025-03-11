@@ -2,6 +2,9 @@ import React from 'react'
 import NavBar from './components/NavBar'
 import Hero from './components/Hero'
 import AboutMe from './components/AboutMe'
+import Technologies from './components/Technologies'
+import Experience from './components/Experience'
+import Projects from './components/Projects'
 
 //https://www.youtube.com/watch?v=_63mEm3AMSY
 
@@ -16,6 +19,9 @@ const App = () => {
         <NavBar />
         <Hero />
         <AboutMe />
+        <Technologies />
+        <Experience />
+        <Projects />
       </div>
       
       
