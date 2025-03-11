@@ -5,6 +5,7 @@ import AboutMe from './components/AboutMe'
 import Technologies from './components/Technologies'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
+import Contact from './components/Contact'
 
 //https://www.youtube.com/watch?v=_63mEm3AMSY
 
@@ -22,6 +23,7 @@ const App = () => {
         <Technologies />
         <Experience />
         <Projects />
+        <Contact />
       </div>
       
       
