@@ -7,8 +7,6 @@ import Experience from './components/Experience'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 
-//https://www.youtube.com/watch?v=_63mEm3AMSY
-
 const App = () => {
   return (
     <div className='overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900'>
