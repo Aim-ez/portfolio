@@ -24,7 +24,13 @@ const AboutMe = () => {
                 transition={{duration: 0.5}}
                 className='w-full lg:w-1/2'>
                 <div className='flex justify-center lg:justify-start'>
-                    <p className='my-2 max-w-xl py-6 font-light tracking-tighter'>{ABOUT_TEXT}</p>
+                    <p className='my-2 max-w-xl py-6 font-light tracking-tighter text-justify'>
+                        {ABOUT_TEXT.split('\n').map((paragraph, index) => (
+                            <span key={index} className='inline-block mb-[6px]'>
+                                {paragraph}
+                            </span>
+                        ))}
+                    </p>
                 </div>
             </motion.div>
         </div>

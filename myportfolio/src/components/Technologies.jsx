@@ -1,6 +1,10 @@
 import { RiReactjsLine } from "react-icons/ri"
-import { SiMongodb } from "react-icons/si"
+//import { FaPython } from "react-icons/fa"
+import { SiMongodb, SiJavascript } from "react-icons/si"
 import { motion } from "motion/react"
+import { FaJava, FaC } from "react-icons/fa6"
+import pythonLogo from "../assets/python.png"
+import javaLogo from "../assets/java.png"
 
 const animateIcon = (duration) => ({
         initial: {y: -10},
@@ -47,21 +51,21 @@ const Technologies = () => {
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <RiReactjsLine className="text-7xl text-cyan-400" />
+                    <SiJavascript className="text-7xl text-yellow-400" />
             </motion.div>
             <motion.div 
                 variants={animateIcon(1.5)}
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <RiReactjsLine className="text-7xl text-cyan-400" />
+                    <FaJava className="text-7xl text-orange-500" />
             </motion.div>
             <motion.div 
                 variants={animateIcon(2.5)}
                 initial="initial"
                 animate="animate"
                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <RiReactjsLine className="text-7xl text-cyan-400" />
+                    <img src={pythonLogo} alt="Python Logo" className="max-h-[4.5rem]"/>
             </motion.div>
         </motion.div>
     </div>

@@ -1,20 +1,27 @@
-import project1 from "../assets/carla.jpg";
-import project2 from "../assets/carla.jpg";
-import project3 from "../assets/carla.jpg";
-import project4 from "../assets/carla.jpg";
+import project1 from "../assets/books.png";
+import project2 from "../assets/platoon.png";
+import project3 from "../assets/eyeball.png";
+//import project4 from "../assets/carla.jpg";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `A computer scientist who loves solving problems and yearns to build things that benefit the world. I work with React and React Native for web and mobile development, and have a strong foundation in C, Java, and Python. Whether I'm working on the frontend, backend, or research-driven projects, I focus on writing clean, efficient code and am always looking for ways to improve.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `No matter what I’m working on—whether it’s a school project, a passion project, or professional work—I always give it my best effort and look for ways to grow my skillset. I love diving deep into a subject, breaking down complex problems, and truly understanding how everything fits together. I find that finishing a project is even more rewarding when I am able to know not only that it works, but exactly why it does.
+
+I first got into computer science in high school, creating small games for the school's shared files so other students could play them. That early love for programming led me to pursue a degree in computer science, which I’ll be graduating with in May of 2025.
+
+I began coding in Java, so it will always have a special place in my heart. These days, I’m most comfortable with Python and C, which I actively use in my research and class projects. I also work with React and React Native, building web and mobile applications for fun in my spare time (such as this website). My experience ranges from developing CAV models in CARLA to mobile app development with Expo.
+
+Beyond coding, I’m an avid reader, and am always eager to learn something new and engage in new experiences. I volunteer in my community, enjoy playing piano, and love video games, although I’ve always had more fun creating them than playing them. Above all, I strive to build up those around me and make a positive impact wherever I can.`
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "2024 - Present",
+    role: "CAV Research Assistant",
+    company: "Brandon University",
+    description: `Conducted research and simulations using CARLA to optimize platoon models for connected autonomous vehicles (CAVs). Designed and implemented experiments to evaluate key performance metrics, including fuel efficiency and safety outcomes. Collaborated with the National Research Council of Canada to analyze data and adjust simulation parameters, contributing to ongoing advancements in autonomous vehicle technology.`,
+    technologies: ["Python", "C/C++", "CARLA", "SUMO"],
   },
+  /*
   {
     year: "2022 - 2023",
     role: "Frontend Developer",
@@ -36,30 +43,32 @@ export const EXPERIENCES = [
     description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
     technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
   },
+  */
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Reading Recommendation App",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "Built a full-stack cross-platform mobile application for managing book recommendations. The app allows users to track their reading history and receive personalized suggestions. I used React Native with Expo for the frontend and Node.js for the backend, and MongoDB to store user data and recommendations. Integrated the Google Books API to fetch book details and implemented a recommendation system based on user preferences.",
+    technologies: ["React Native", "Expo", "Node.js", "MongoDB", "Google API"],
   },
   {
-    title: "Task Management App",
+    title: "CARLA Platoon Optimization",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "Developed Python scripts for platoon formation and car-following behavior in CARLA. Created a master script to reload the world and set up experiments, along with scripts to interact with the CARLA server. Automated the parameterization of vehicle behavior, traffic, and environmental conditions, optimizing experiment setup and data collection for efficient and reproducible simulations.",
+    technologies: ["Python", "C/C++", "CARLA", "SUMO"],
   },
   {
-    title: "Portfolio Website",
+    title: "Personal Portfolio Website",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "Designed and developed a personal portfolio website to showcase my skills and projects. Built using React, Tailwind CSS, and Node.js, the site features a dynamic, responsive layout and integrates with a backend for personalized content.",
+    technologies: ["React", "Node.js", "Tailwind CSS", "Framer Motion"],
   },
+  /*
   {
     title: "Blogging Platform",
     image: project4,
@@ -67,10 +76,11 @@ export const PROJECTS = [
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
     technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
   },
+  */
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: "Brandon, MB, Canada ",
+  phoneNo: "+1 (204) 596-9177 ",
+  email: "theaimeeschmidt@gmail.com",
 };
