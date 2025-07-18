@@ -1,25 +1,24 @@
 name: Deploy to GitHub Pages
 
-# Trigger the action only when changes are pushed to the `main` branch
 on:
   push:
     branches:
-      - main
+      - main  # Trigger this workflow on push to the main branch
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # Use a virtual machine running Ubuntu
 
     steps:
-      # Checkout the repository
+      # Checkout the repository code
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3  # Use the latest version of checkout
 
       # Set up Node.js environment
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'  # You can change this to the version you're using
+          node-version: '16'  # You can change this to your desired version of Node.js
 
       # Install dependencies
       - name: Install dependencies
@@ -27,12 +26,12 @@ jobs:
 
       # Build the project
       - name: Build project
-        run: npm run build
+        run: npm run build  # Ensure this builds your project
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         run: |
-          npm install --save gh-pages
-          npm run deploy
+          npm install --save gh-pages  # Install gh-pages if it's not already installed
+          npm run deploy  # This runs the gh-pages deploy script
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Automatically provided token to authenticate the deployment
