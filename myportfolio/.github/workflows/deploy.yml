@@ -8,30 +8,29 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest  # Use a virtual machine running Ubuntu
+    container:
+      image: node:20  # Use a Node.js Docker container with version 20
 
     steps:
       # Checkout the repository code
-      - name: Checkout repository
-        uses: actions/checkout@v3  # Use the latest version of checkout
+      - uses: actions/checkout@v3  # Use the latest version of checkout
 
-      # Set up Node.js environment
+      # Set up Node.js environment (make sure the Node version is compatible)
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '16'  # You can change this to your desired version of Node.js
+          node-version: '20'  # Use Node.js version 20 as defined in the container
 
-      # Install dependencies
-      - name: Install dependencies
-        run: npm install
+      # Install dependencies using npm ci (for a clean install)
+      - run: npm ci
 
-      # Build the project
-      - name: Build project
-        run: npm run build  # Ensure this builds your project
+      # Build the project using npm
+      - run: npm run build
 
-      # Deploy to GitHub Pages
+      # Deploy the project to GitHub Pages
       - name: Deploy to GitHub Pages
         run: |
-          npm install --save gh-pages  # Install gh-pages if it's not already installed
-          npm run deploy  # This runs the gh-pages deploy script
+          npm install --save gh-pages  # Install gh-pages to deploy to GitHub Pages
+          npm run deploy  # Run the deploy script (ensure this exists in package.json)
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Automatically provided token to authenticate the deployment
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use the GitHub token for authentication
