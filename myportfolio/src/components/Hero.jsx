@@ -14,7 +14,7 @@ const animationContainer = (delay) => ({
 
 const Hero = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 lg:mb-35">
+    <div className="border-b border-neutral-900 pb-8 lg:pb-12">
         <div className="flex flex-wrap">
             <div className="w-full lg:w-1/2">
                 <div className="flex flex-col items-center lg:items-start">
@@ -22,34 +22,32 @@ const Hero = () => {
                         variants={animationContainer(0)}
                         initial="hidden"
                         animate="visible"
-                        className="pb-16 text-2xl font-thin tracking-tight lg:mt-16 lg:text-7xl"
+                        className="pb-4 text-2xl font-thin tracking-tight lg:mt-16 lg:text-7xl"
                     >
                         Aimee Schmidt
                     </motion.h1>
-                    <motion.span 
-                        variants={animationContainer(0.5)}
-                        initial="hidden"
-                        animate="visible"
-                        className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">CAV Researcher</motion.span>
                     <motion.span                    
                         variants={animationContainer(1)}
                         initial="hidden"
                         animate="visible"
-                        className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent">Full Stack Developer</motion.span>
+                        className="text-3xl md:text-4xl font-light text-slate-500 mb-6">Full Stack Developer  |  CAV Researcher</motion.span>
                     <motion.p 
                         variants={animationContainer(1.5)}
                         initial="hidden"
                         animate="visible"
-                        className='my-2 max-w-xl py-6 font-light tracking-tighter text-justify'>{HERO_CONTENT}</motion.p>
+                        className='text-lg md:text-xl max-w-xl py-4 font-normal bg-gradient-to-r from-slate-500 via-slate-300 to-green-500 bg-clip-text text-transparent leading-relaxed tracking-wide'>{HERO_CONTENT}</motion.p>
                 </div>
             </div>
             <div className='w-full lg:w-1/2 lg:pl-20 flex items-center'>
-                <div className='flex justify-center'>
+                <div className='w-full lg:w-1/2 lg:pl-20 flex items-center justify-center'>
                     <motion.img 
-                        initial = {{x:100, opacity: 0}}
+                        initial={{x:100, opacity: 0}}
                         animate={{x:0, opacity:1}}
                         transition={{duration: 2, delay:0}} 
-                        className='rounded-2xl' src={profilePic} alt="Aimee Schmidt"/>
+                        className='rounded-full w-52 h-52 lg:w-56 lg:h-56 object-cover border-4 border-transparent bg-clip-border bg-gradient-to-r from-slate-500 via-green-500 to-slate-500 shadow-lg'
+                        src={profilePic} 
+                        alt="Aimee Schmidt"
+                    />
                 </div>
             </div>
         </div>

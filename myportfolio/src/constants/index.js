@@ -3,15 +3,13 @@ import project2 from "../assets/platoon.png";
 import project3 from "../assets/eyeball.png";
 //import project4 from "../assets/carla.jpg";
 
-export const HERO_CONTENT = `A computer scientist who loves solving problems and yearns to build things that benefit the world. I work with React and React Native for web and mobile development, and have a strong foundation in C, Java, and Python. Whether I'm working on the frontend, backend, or research-driven projects, I focus on writing clean, efficient code and am always looking for ways to improve.`;
+export const HERO_CONTENT = `Making life better, one line of code at a time.`;
 
-export const ABOUT_TEXT = `No matter what I’m working on—whether it’s a school project, a passion project, or professional work—I always give it my best effort and look for ways to grow my skillset. I love diving deep into a subject, breaking down complex problems, and truly understanding how everything fits together. I find that finishing a project is even more rewarding when I am able to know not only that it works, but exactly why it does.
+export const ABOUT_TEXT = `I'm a Full Stack Developer and CAV Researcher driven by the belief that technology should improve lives. My journey began in high school, creating small games for classmates, and today, I design web and mobile apps, develop CAV models, and optimize tech solutions for real-world problems.
 
-I first got into computer science in high school, creating small games for the school's shared files so other students could play them. That early love for programming led me to pursue a degree in computer science, which I’ll be graduating with in May of 2025.
+I’m passionate about continuously evolving my skill set. Whether it’s diving into complex code or collaborating with diverse teams, I aim to craft clean, scalable solutions. From coding in Python, C, and Java, to building React and React Native applications, I enjoy tackling challenges and making a tangible impact.
 
-I began coding in Java, so it will always have a special place in my heart. These days, I’m most comfortable with Python and C, which I actively use in my research and class projects. I also work with React and React Native, building web and mobile applications for fun in my spare time (such as this website). My experience ranges from developing CAV models in CARLA to mobile app development with Expo.
-
-Beyond coding, I’m an avid reader, and am always eager to learn something new and engage in new experiences. I volunteer in my community, enjoy playing piano, and love video games, although I’ve always had more fun creating them than playing them. Above all, I strive to build up those around me and make a positive impact wherever I can.`
+When I’m not coding, I’m reading, playing piano, or contributing to my community. I believe in the power of collaboration and strive to help others grow, too.`
 
 export const EXPERIENCES = [
   {
