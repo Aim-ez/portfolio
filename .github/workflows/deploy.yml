@@ -1,0 +1,32 @@
+name: Build Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Trigger this workflow on push to the main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest  # Use a virtual machine running Ubuntu
+    concurrency: ci-${{ github.ref }}  # Ensure only one job runs at a time for the same branch
+
+    steps:
+      # Checkout the repository code
+      - name: Checkout
+        uses: actions/checkout@v3  # Use the latest version of checkout
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22.12.0'  # Use Node.js version 20 as defined in the container
+
+      - name: Install
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with: 
+          folder: build
+          branch: gh-pages
