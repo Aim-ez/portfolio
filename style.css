@@ -12,6 +12,7 @@
     --primary-hover: #483D8B;
     --secondary: #8A2BE2;
     --tertiary: #6A5ACD;
+    --inverse: #7FFF7F;
 
     /* Supporting */
     --border: #E4DDF0;
@@ -22,7 +23,22 @@
     box-sizing: border-box;
 }
 
+.right-flex {
+    display: flex;
+    justify-content: right;
+}
 
+header {
+    background-color: var(--primary);
+    gap: 20px;
+    padding-right: 40px;
+}
+
+.task-link {
+    color: var(--surface);
+    font-size: 1rem;
+    padding: 4px;
+}
 
 body {
     background-color: var(--background);
@@ -39,10 +55,6 @@ main {
     background-color: var(--background);
 }
 
-header {
-    text-align: left;
-}
-
 .hero {
     display: flex;
     justify-content: center;
@@ -51,12 +63,22 @@ header {
 }
 
 .hero-card {
-    max-width: 60ch;
+    max-width: 63ch;
     padding: 3rem;
     border-radius: 20px;
     background-color: var(--surface);
     box-shadow: 0 8px 30px var(--shadow);
 
+}
+
+.see-more {
+    color: var(--tertiary);
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.see-more:hover {
+    color: var(--inverse);
 }
 
 h1 {
