@@ -158,6 +158,16 @@ a:hover {
     text-decoration: underline;
 }
 
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--surface);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 8px;
+    width: 400px;
+}
+
 .cards-container {
     display:grid;
     place-content: center;
