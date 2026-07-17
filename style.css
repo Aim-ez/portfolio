@@ -158,13 +158,19 @@ a:hover {
     text-decoration: underline;
 }
 
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 .project-card {
     display: flex;
     flex-direction: column;
     background: var(--surface);
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 8px;
+    margin: 30px;
     width: 400px;
 }
 
@@ -182,7 +188,7 @@ a:hover {
     height: 450px;
     border-radius: 25px;
     position: relative;
-    box-shadow: 1 10px 100px var(--shadow);
+    box-shadow: 1px 10px 100px var(--shadow);
     overflow: hidden;
     transition: transform .2s, box-shadow .2s;
 }
