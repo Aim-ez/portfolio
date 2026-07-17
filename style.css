@@ -23,7 +23,7 @@
     box-sizing: border-box;
 }
 
-.right-flex {
+.site-header {
     display: flex;
     justify-content: flex-end;
 }
@@ -32,6 +32,21 @@ header {
     background-color: var(--primary);
     gap: 20px;
     padding-right: 40px;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: var(--surface);
+    font-size: 1.5rem;
+    transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+    color: var(--inverse);
 }
 
 .task-link {
