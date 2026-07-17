@@ -145,6 +145,7 @@ a:hover {
 
 .cards-container {
     display:grid;
+    place-content: center;
     grid-auto-flow: row;
     grid-template-columns: repeat(auto-fit, minmax(250px, 330px));
 }
