@@ -144,6 +144,10 @@ h4 {
     text-align: center;
 }
 
+.employer {
+  font-size: 0.5 rem;
+}
+
 section {
     margin-bottom: 40px;
     text-align: left;
