@@ -24,28 +24,34 @@
 }
 
 .site-header {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social-links {
+  margin-left: auto;
 }
 
 header {
     background-color: var(--primary);
     gap: 20px;
+    padding-left: 40px;
     padding-right: 40px;
 }
 
 .social-links {
-    display: flex;
+  display: flex;
     gap: 1rem;
 }
 
-.social-links a {
+.site-header a {
     color: var(--surface);
     font-size: 1.5rem;
     transition: color 0.2s ease;
 }
 
-.social-links a:hover {
+.site-header a:hover {
     color: var(--inverse);
 }
 
