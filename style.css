@@ -136,13 +136,6 @@ h2 {
     font-weight: 500;
 }
 
-h3 {
-    color: var(--text);
-    margin-top: 0px;
-    padding-left: 4px;
-    font-weight: 900;
-}
-
 h4 {
     color: var(--surface);
     font-weight: 900;
@@ -164,10 +157,32 @@ h2.employer {
   font-weight: 100;
 }
 
+h3 {
+    display: inline-block;
+    padding: .4rem 1.2rem;
+    color: var(--primary);
+    font-size: 1.8rem;
+    margin: 0 auto 2rem;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: var(--secondary);
+    margin: 0.5rem auto 0;
+}
+
 section {
-    margin-bottom: 40px;
+    text-align: center;
+    padding: 4rem;
+}
+
+section > *:not(h3) {
     text-align: left;
 }
+
 
 a {
     color: #2563eb;
