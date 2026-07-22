@@ -29,10 +29,6 @@
   align-items: center;
 }
 
-.social-links {
-  margin-left: auto;
-}
-
 header {
     background-color: var(--primary);
     gap: 20px;
@@ -42,7 +38,8 @@ header {
 
 .social-links {
   display: flex;
-    gap: 1rem;
+  gap: 1rem;
+  margin-left: auto;
 }
 
 .site-header a {
@@ -176,7 +173,7 @@ h3::after {
 
 section {
     text-align: center;
-    padding: 4rem;
+    padding: 3rem;
 }
 
 section > *:not(h3) {
@@ -266,4 +263,9 @@ a:hover {
     border-radius: 20px;
     line-height: 1.6;
     font-size: 1rem;
+}
+
+#contact {
+  max-width: 700px;
+  margin: auto;
 }
