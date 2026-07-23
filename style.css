@@ -36,7 +36,7 @@ header {
     padding-right: 40px;
 }
 
-.social-links {
+.header-socials {
   display: flex;
   gap: 1rem;
   margin-left: auto;
@@ -268,4 +268,19 @@ a:hover {
 #contact {
   max-width: 700px;
   margin: auto;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 2rem;
+}
+
+.github {
+  color: var(--text);
+}
+
+.contact-text {
+  text-align: justify;
 }
