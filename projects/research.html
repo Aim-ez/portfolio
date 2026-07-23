@@ -32,14 +32,169 @@
 
     <main>
     
-      <div>This is currently a dummy webpage. In the future, this page will have an in-depth explanation of my research.</div>
+      <div>This page is currently under construction. In the future, this page will have
+          an in-depth explanation of my research.</div>
       <div>Feel free to check the paper for this project out at:</div>
       <a href="https://ieeexplore.ieee.org/document/11054152">Modeling and optimizing platooning systems for autonoumous vehicles in CARLA</a>
+      
+      <h1>Connected and Autonomous Vehicle Platooning Research</h1>
+      <h2>A year-long research project investigating how vehicle platoon configurations 
+      affect safety and fuel efficiency in highway simulations.</h2>
+      <p>---INSERT SCREENSHOT HERE---</p>
+      <p>---INSERT LINK TO PAPER HERE---</p>
+      
+      
+      <section id="research-opportunity">
+        <h3>The Opportunity</h3>
+        <p> During my final year of university, I was invited to join Dr. Rashed Nekvi's research investigating
+            Connected and Autonomous Vehicles (CAVs). The work was conducted in collaboration with the National
+            Research Council of Canada (NRC) and focused on improving the safety and efficiency of autonomous 
+            vehicle platoons using the CARLA driving simulator. </p>
+      </section>
+      
+      <section id="research-role">
+        <h3>My Role</h3>
+        <p>My work focused on designing and implementing the software used to simulate autonomous vehicles. I 
+            designed the experiment flow, automated the scripts that ran each experiment trial, and designed the
+            scripts for vehicle spawning, data collection, traffic spawning, and environment setup. I developed new
+            functionality within CARLA, implemented vehicle controllers, automated large batches of simulations, and 
+            analyzed the resulting data to evaluate different platoon configurations.
+          </p>
+      </section>
+      
+      <section id="resarch-built">
+        <h3>What I Built</h3>
+        <p>Implemented autonmous vehicle Platooning</p>
+        <p>Developed experiment automation scripts</p>
+        <p>Implemented PID and CACC controllers</p>
+        <p>Simulated highway traffic</p>
+        <p>Collected safety and fuel efficiency metrics</p>
+        <p>Analyzed experimental data</p>
+      </section>
+      
+      <section id="research-challenges">
+        <h3>Technical Challenges</h3>
+        
+        <div class="cards-container">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h4>Building Platoons</h4>
+              </div>
+              <div class="card-back">
+                CARLA didn't provide the platooning functionality our project required, so I implemented the logic needed
+                within a Python script to coordinate multiple autonomous vehicles travelling together while maintaining
+                safe following distances.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h4>Working with CARLA</h4>
+                        </div>
+
+                        <div class="card-back">
+                            There really isn't anything as puzzle-pieced together as open-source research platforms. A large
+                            hurdle in this project was learning the simulation platform from scratch. Understanding CARLA's
+                            client-server architecture and extending an unfamiliar codebase required a lot of trial and error,
+                            debugging, persistence, and coffee.
+                        </div>
+                    </div>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h4>Automation</h4>
+              </div>
+              <div class="card-back">
+                Running experiements manually would have taken an enormous amoutn of time, so I developed scripts to 
+                automate simulations, restart experiements if an error occured, manage traffic generation, set environment 
+                variables, and collect results for later analysis. 
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h4>Debugging Complex Systems</h4>
+              </div>
+              <div class="card-back">
+                Many of the hardest problems came from unexpected behaviours within a complex simulation. From timing issues to 
+                memory leaks (that I may have thought broke my computer), solving problems often meant breaking them down one 
+                code block at a time.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h4>Balancing Accuracy & Performance</h4>
+              </div>
+              <div class="card-back">
+                One of the limitations of doing research at a smaller university is the processing power of your computer is 
+                limited to...the processing power of your personal machine. However, the simulation had to remain realistic 
+                while still running reliably on available hardware. Finding that balance meant carefully tuning parameters 
+                and making practical engineering decisions throughout the project. 
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">
+                <h4>Learning Through Research</h4>
+              </div>
+              <div class="card-back">
+                Research rarely has a clear roadmap. This project taught me how to investigate unfamiliar problems, test 
+                different approaches, analyze results, and continually refine my work.
+              </div>
+            </div>
+          </div>
+                
+            <!--Insert 'spawning traffic in batches -->
+            <!-- Insert 'balancing simulation accuracy with hardware limitations -->
+            <!-- Implementing platooning becaue CARLA didn't include it natively-->
+            <!-- Debugging timing issues-->
+            <!-- Automating dozens of experiments-->
+                
+        </div>
+        
+      </section>
+      
+      <section id="research-results">
+        <h3>Results</h3>
+        <p>The project culminated in a paper that was accepted for publication at the IEEE Vehicular Networking 
+        Conference (VNC) 2026, where I had the opportunity to present our findings in Porto, Portugal. </p>
+        <p>----Insert photo(s) of me at the conference----</p>
+      </section>
+      
+      <section>
+        <h3>What I Learned</h3>
+        <p>This project fundamentally changed how I approach software development. It taught me how to work with
+            an existing codebase, design experiments, debug complex systems, and communicate technical findings
+            through research. More importantly, it showed me that solving difficult problems often requires 
+            persistence, experimentation, and many iterations before arriving at a solution.</p>
+            
+        <h5>Learned an unfamiliar simulation platform</h5>
+        <h5>Extended the platform with new functionality</h5>
+        <h5>Automated experiements so simulations could run while I sleep</h5>
+        <h5>Analyzed the data</h5>
+        <h5>Co-authored a paper</h5>
+        <h5>Presented internationally</h5>
+      </section>
+      
+      <section>
+        <h3>Looking Back</h3>
+        <p>This project pushed me further than anything I'd worked on previously. It taught me that research software
+        is more than just writing code. It includes designing reliable systems, validating results, and solving problems
+        where there isn't always a clear answer. Although challenging at times, it strengthened both my technical skills
+        and my confidence in tacklet large, unfamiliar codebases.</p>
+      </section>
     </main>
 
     <footer>
         
     </footer>
-
+    <script src="../script.js"></script>
 </body>
 </html>
