@@ -284,3 +284,10 @@ a:hover {
 .contact-text {
   text-align: justify;
 }
+
+.copyright {
+  padding-left: 0.5rem;
+  color: car(--text-muted);
+  font-weight: 200px;
+  font-size: 0.5rem;
+}
